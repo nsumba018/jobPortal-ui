@@ -62,12 +62,6 @@ const Login = () => {
         password: "EazyBytes@1803",
         userType: "employer",
       });
-    } else if (type === "admin") {
-      setFormData({
-        email: "admin@gmail.com",
-        password: "EazyBytes@1803",
-        userType: "admin",
-      });
     } else {
       setFormData({
         email: "john@gmail.com",
@@ -171,20 +165,6 @@ const Login = () => {
                     <div className="font-medium text-blue-700">Job Seeker</div>
                     <div className="text-gray-500">
                       john@gmail.com / EazyBytes@1803
-                    </div>
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => fillDemoCredentials("admin")}
-                    className={`w-full p-2 text-left ${
-                      theme === "dark"
-                        ? "bg-gray-700 border border-gray-600 hover:bg-gray-600"
-                        : "bg-white border border-gray-200 hover:bg-gray-50"
-                    } rounded-lg transition-colors text-sm`}
-                  >
-                    <div className="font-medium text-blue-700">Admin</div>
-                    <div className="text-gray-500">
-                      admin@gmail.com / EazyBytes@1803
                     </div>
                   </button>
                 </div>
