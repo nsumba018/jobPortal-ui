@@ -251,7 +251,7 @@ export const AuthProvider = ({ children }) => {
         return {
           success: false,
           error:
-            "Cannot connect to server. Please check if backend is running on http://localhost:8081",
+            "We're unable to reach the server right now. Please check your internet connection and try again in a few moments.",
         };
       } else {
         // Something else happened
@@ -330,7 +330,7 @@ export const AuthProvider = ({ children }) => {
         return {
           success: false,
           error:
-            "Cannot connect to server. Please check if backend is running on http://localhost:8081",
+            "We're unable to reach the server right now. Please check your internet connection and try again in a few moments.",
         };
       } else {
         // Something else happened
